@@ -1,30 +1,39 @@
-import { title } from "process";
-import React from "react";
+import React from 'react';
 
-
-
-export const ViewDetails = ({books}:props)=>{
-    return (
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <td>title</td>
-                        <td>author</td>
-                        <td>price</td>
-                    </tr>
-                <tbody>
-                    {books.map(item:{ title:string,author:string,price:string})=>(
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    ))}
-                </tbody>
-                </thead>
-            </table>
-        </div>
-    )
+interface Book {
+  title: string;
+  author: string;
+  price: string;
 }
+
+interface ViewDetailsProps {
+  books: Book[];
+}
+
+const ViewDetails: React.FC<ViewDetailsProps> = ({ books }) => {
+  return (
+    <div className='view-container'>
+      <table>
+        <thead>
+          <tr>
+            <td>title</td>
+            <td>author</td>
+            <td>price</td>
+          </tr>
+        </thead>
+        <tbody>
+          {books.map((item:{title:string, author:string,price:string}) => (
+            <tr>
+              <td>{item.title}</td>
+              <td>{item.author}</td>
+              <td>{item.price}</td>
+            </tr>
+          ))}
+        </tbody>
+        {/* <button type='delete'></button> */}
+      </table>
+    </div>
+  );
+};
+
 export default ViewDetails;
