@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/panku2939.github.io/typescript_app/static/css/main.e6c13ad2.css",
+    "main.js": "/panku2939.github.io/typescript_app/static/js/main.94a9ab88.js",
+    "static/js/787.56315ba9.chunk.js": "/panku2939.github.io/typescript_app/static/js/787.56315ba9.chunk.js",
+    "index.html": "/panku2939.github.io/typescript_app/index.html",
+    "main.e6c13ad2.css.map": "/panku2939.github.io/typescript_app/static/css/main.e6c13ad2.css.map",
+    "main.94a9ab88.js.map": "/panku2939.github.io/typescript_app/static/js/main.94a9ab88.js.map",
+    "787.56315ba9.chunk.js.map": "/panku2939.github.io/typescript_app/static/js/787.56315ba9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.94a9ab88.js"
+  ]
+}
